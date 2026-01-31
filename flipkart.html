@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./flipkart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="nav-Container">
+        <div class="logo">
+            <img height="65" width="140px"
+                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg"
+                alt="">
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for Products , Brands and more">
+        </div>
+        <div class="icons">
+            <div class="login">
+                <i class="fa-regular fa-circle-user"></i>
+                <p>Login</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <i class="fa-solid fa-cart-shopping" title="cart"></i>
+            <i class="fa-solid fa-shop" title="Become a Seller"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/e00302d428f5c7be.png?q=100" alt="">
+            <p>Minutes</p>
+        </div>
+        <div>
+            <img class="mobiles" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/5f2ee7f883cdb774.png?q=100"
+                alt="">
+            <p>Mobiles & <br> Tablets</p>
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/jacket/9/3/p/xl-1-no-mt2-jkt-arrow-print-ice-blue-white-motrex-original-imahgnjm9qmkzfwz.jpeg?q=60"
+
+                alt="">
+            <p>Fashion
+                <i class="fa-solid fa-angle-down"></i>
+            </p>
+        </div>
+        <div>
+
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+            <p>Electronics <i class="fa-solid fa-angle-down"></i></p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" alt="">
+            <p>TVs & <br> Appliances</p>
+        </div>
+        <div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBUSEBIVFRUVFRUXFRUVFxUVFRUVFRUYFhUVGBYYHSggGBolHRcXITEhJSkrLi4uFx8zODMuNygtLisBCgoKDg0OFhAPFy0fHR0uLS0tKystLS0tKy0rLSstLS0tLS8tLS0tKy0tKy0rLS0tLS0rLS0tNy0tKys3LSsrK//AABEIAKgBLAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xABTEAABAwICBAgICQgGCgMAAAABAAIDBBESIQUGMUEHEyJRYXGRsSMyUnKBocHRFCRCU3OCkrLSM2KDk6PC4fAVQ3Szw9MWFyU0RGNkhKLxCDVU/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECAwQGBf/EAC4RAQACAQIDBQcFAQAAAAAAAAABAhEDMRIycQQhQVGhBTNCgZHB4RQiNLHRI//aAAwDAQACEQMRAD8A14FdXSYKMFVCoKNJArsFAo1dJMFdAoOwjC5CMIOkESNASJGUEBIIIIAhZBBALIIIIAggggFkEEEAsgghZAEELIWQBBBGgCNEjQBBBBAESNclAEEESAIIroroGQcugUmCjBVCoK6BSYXQKgVBRhcAroFAoCukndKAoOgjXK6QBBU/SvCJSU9SIJg9oL5GOkAu1j48GTgM7ESA3F7d1rpalkrGyRPa9jhdr2EOa4c4IyKBRBBBAEEEEAQQQQBBBBAEEEEAQQQQBBBBAEaCCALoIkaAkEERUUSJGVygBKK6IokAuiugiVDAFI1tdFCwyTSNjYPlPIaOoX2noCzyu1sqtzw3zWt9oKoGlquSaUvle57tgLjew5hzDoCT3MtOnFOGi6w8KzIhipIRMwGxc8ujubi+EWvblDMjny3qLpuG75yh9LJ7+oxjvWf6THxU+f8A5agGLDLq1dGleHHjDdafhmpD41NUjzeKd3vCmqLhP0fJvmb50R/dJXnuFTWiN6nFKRoUlv0Ou9A7ZUAecyVve1PP9KaLCXfCY7Dbyrn0NGZ9AWGxpSqNo3H80qcctv6OsxM5lqUnCKwyFsNLNMwC5czxttr4LHLMbSE8puEWhJtIZYXeTLG4EdeDEqNwXyYp3gi44px/82LSHQRXDpLYWm5x4S0WGRz6bHrWx89iXCJKH1T3NN2uqKhwPOHRUrgewqI1d1qq6B+Klks0m74ncqJ/nMvkfzhY9KldfjepeR8/N/c0qqMoRHoXUzhMpK20T/i9QcuLeeS8/wDLkyDvNNndB2q7ArxzKLrb+BLT9RNTysnlfIIpGtjLzic1pZe2I5kc10VrCiNb658Gj6qeIgSRQSPYSAQHNaSDY5FSzSoDhD/+prf7LN9wqoxZnCrpX5+P9TF7lcuDTXetrK7iKiVrmcTI+wjY04mlgBu0X+UVjUELnbMP1nxs++4X2q+cCJ/2v1U03T8qJRXoBBGgqgkEaZaU0nHA0Olc1uI4W4rgE2JzIBtsQPEFHU2lmmbiXGPHdwAY8vza0OsbtFjhN7Z+KVJICQRoICXVkSg9ZdbaahLBUmQY/FwRPkBzta7Ra98ItzvbzoJ1BM9EaSbURCVrJWB17NmjdE/LeWOzA5jvTsqKBRFEb7relNW1rCQBIwk7LEG99ludA5cVwU00jXCFuJ5aBc8pzsDRYXtex5R3Dfmo7WitrGUrH0MAfK57AWSNc7AwsLnFwa4WINht3oJtFdZz8L1ie9oEEUbS4YiBCLNvnk9xOxXHT8uGS4dhs0bMudBJkorqo1+szqdgkf4RpcG2Fgc753PUuote6Yi5ZKOizT+8qjOKwqtSt5R6yrHVnaoBwzPWUs3aHMZaWHxU+f8A5arrFY9M/wC7Hz/8tVxi1O3X+DpH3Sei52MeHSR8Y2xGHG6PaLXxNzCnIH07846d8bhYg8dxgy3WMYPrVbiU3onemWEUrM5mEvEuq78i/wA0riNd135F/mlYeLsjkt0lZeDF2FskgNtjb2vYF0d+9abBIHZB7HXGzEMWy+bbbFmfBnKRBMAGk55OtbPixcg7epWnRsrsMmNux5sSDaxvcuijJve97f8AodEVz3vhTOJZbrjHaokHNNIP2NMoClZHx0fH3EWNnGEXuI8QxkWzva+xWLWUXmflbwjsrEW+L0uVjmOpVypaorvW7R8UM4FPUCojfG2Rsgw3F3PaWuLci4FmZsDnmFoPAL4lR9Kz7iyeZaxwCeJUfSx/cKKfVnChWsmkjbHT2ZI9guyQmzHlov4QZ5JlpbX2sqqeWnkbAGTMdG4tY/EGuFjYmQi/oVL0nOfhdRd1r1E+RsLAzPsM05hI3zAemP3KoRp9WA4jwjs+ge9NtD6xnRtcZqPDMWsdGTKDhdiIL7BpG9oAN+foT/TdSWUjzHNdxLWWBjJwuydbCLjLvVHBPN3qK1dvDbpB3i0kDuoTOt2FaXwY60VGkKWSaphbE5kxjAaHtDmhjXXs83+Vb0Ly8c9oHYvQH/x6P+zZhht8aeQbEBwMUXbsIQagq/rpEwxQuka1zW1VPk9ocPCSCG1jzmQBTc1SxpAc6xOwWJvtO7oBPoPMVQ+FjSBNPTQwyFvHzXLmEg4YxuIzuJHRnrarEZRXdZaImatkia/jI3VkkJjxCQStbSMZhwZnxXC2w3K1+AnCCdthfrWN0lLJQ6SgvUzTCd0rHmY8wBD/ABjclxZmc1p79K8hthYua5zbloxBrcRIz2WI7VZjCQmQgsvfrtXtro6XDS3e3GblxDMi7AXYwS+wABAzxA22rRtG1zZmYm3BBwva4Oa5j7AlpDgDvGe8EFRTpZrwpVLnzU0cMT5DFIHyYbclrZaeW9ibnJgFvzloQqgRiBGEZX/gsd4StbHUWkM42vEsd74nZxvEQJAFi1wEeXK2ncorQdVdNS1DeMkiMQcThBcHXsbE7BvBGzcrOFkXBprO+okIFxHFEOSfGdJI97y7Fc3aA0jPPfvsNL/pHNjQPGw3z2XOY2dCIkC1xPJIGW8XSfEBjblzGhouSW2AA33Lsk4iWJ69ack0pXyUMMhZR0zrTEf1j2mzr84xclo2XBOdrIrQJOEDRgeWCrEhaeUY2OkaDfymtIPoU1ozS8FQ0up5hIBtwkB7fOYQHBZLoiio4fBQBgJtiORJOdsTjlvPrUjVGKBzZI8UVQLmJ8YFzz4s8L49xuei4NkGsiNpG0kHfc+xVvWAAS57AL5knOw5081Y0yKmnjnDcPGYmyM2iOeMlsrQd4u12e+wO9R+szrTegdwt60FN1xcDTgjYZGdtnfz6FXY9im9bX3hGVjxjbjpAI9ygmHJVHFWoM7T1lTdWoTn6z3pZu0OY00sBxDsRIbiFiAHG/JvkSMvF7Sq8Azc53pYPxqf03/ux8/8CrjVqdmtHfXp/p9EG+Uey3tUvozK+ahYVL6OKklITERR1jyYn5Eck7bewpOFyVrj4F/mlY+LqiP2W6Ss3BI3HLJHlnGXZi4yezdfoWmOoTiB5BIORwkdxPrWLanaQEHHyGMSYYGnATYEmeNozINrXve25a1q7VCWNk5ZxbXC5FxhF23FzlfaD6Vuz34fDZLrKL1Mx55nntgpVW6tqs2spBqpsNrcc+1tluIprW6FW61ZCFqFq3AL4lT9LH9wrKaharwCHk1P0kf3HKKjtZqBnw+puxpvPKc2je8n2qH0xLDTxYuKjL3XDGljdu9xy8Ue4LZtJ6gU80z5jjDnuxOtJIBc7bAOsFGVPBLSSG8jXuNrXMkhNubxtmZ7UR5zdmSTtJJOzaepBehv9TdD5B/WSfiQ/wBTVD5Dv1kv4kV55XpfgNjtoWE+VJOf2rm/uplFwNaP+Uxx/SS/iV51f0LDR07KanbhjZiwglzvGcXOzcSdpKDJK2tqxUUstVUSQNqPhuO4fGWZvjbYC2YwsN9tnC3OmWs1WS+jle8uu+oe9x2ZvifGQNxMUYJ6ir/pbUwvkJEkrmjxQ92O3P4wKQGqcnlEjmIaR2WUi1onb1/C4r5+ip6z1jZqikzY/wALdzWG9mvkpy4HnADX8oZOANtibzta6WkgNTIH08VSHhspMjHgDB41yA6zbXyLXHnVy/0QcMwSDzhrB+6k3aoSXvidfeeTc9Zsk2tPh6/gxXzV3RbZJKmnmNncYIn2b4xtCGEZ2ANxvNulazomNw4yR7cJlkxhpIJa0MYwAlpIJ5N8idqpNNqfJiBxvFtlja3Vkrdo7QrWxFjnyEuIucZvle1iOsqZt5epivmasqGAOBc0EE5Ei/Yse4X9ET1VXTOgZixRYBy42kuab2s5wOyx9K1nSeqQIvHNMDfZiYevxmFQs2pjjtqJ+2MdzFM28vX8Moivmp3BloeeldJxzMJcyOwvGTlxt/Ee7LlbTa/MtGp57yMA5t2e9x9yrsuop3zzn67fwptUailwAfJK4DZd17epIm/kkxXzao0kMcRtDcuuxsvMWpZL46huLE44HuIvmTjve9r5r0BqJon4NC9mJ5u8Hluc63JAsL7BlsCxrWzQ8+h9JSSRMaYJ3PdEXNJY5rjidCSCLOadmeyxzzCzhid6pxZSSkZRxOktznGIo2/aIP1UVNXYnOu5rsV9psQb5OF/Xa/jFQ9Lrc+OKaNkMYE2C55RLcEhkGHPnO/mCjtFxVNRKynpW4pH5NAAyA2ucTfC0bz7bINt4Mg74NPfZ8N5A/Qwh9vrB/rTrWl/h/QO4KW1Y0M2kpYqZhxCJpxv3yTOJMj/AEuc4/WtuUFra7w/1R3BBT9aj4EfSM7nKFZsUxrSfAD6Rnc5QzNiqE6veoXn6z3qZq1DDf1nvSzdocxhpw+A+v8AgVearDpd1ojcBwxDkm4AIw58kg7x2KDEjfm29r/xLU69We+vQtCpSiKjonDyR2n3p9A4c3ekrRKwuTirPgn+aUxgel5ieLfc35JWPi6/gt3eEpnUagZK6dsrXOYKRzi1rsLiY5WPAa7cbgLRdC6Zjp6dg+DVTGizQwmFz22AaMQxjKwGao3B23OpP/RSj1tVi0fWvxFsr74uUy2EAgkiwy2cx/8AaamrTTtHF4/Z8JT9anA1k7hkHTvcNnyoac7iR2EhVmtKseszvjMv0l+kfF6bJVmsK3RORD1BWrcAXi1P0kX3XLKJ1qvAG7Kq+ki+65Fa/pHSboXMaIi8O+UCBhyJJN91wBlc3cMrXI4GmnfNj7X8EnrDWwxxNfK8NAcACdl3bujZ/N1Cs01TWvx8Q63taew5oLANLu+bH2v4LsaUd5A7f4KCdpqlba9RCL7LyM2821KnTVMNs8I65Gj2oJiTSjha0RdcgZOGQJsXHFbIbcs+YFSbb2F9qrFJp6ldKyMTMJc6zQCTiNr2BAsdisolCDqyOyaP0nGCQScjbYdy5/paLyj9k+5A9sismX9MQ+Ufsu9yA0vFznsKB7hR2SENY1wu05XtzfztULrTrbFRsaXMfI55Ia1guLgXJcfkjpsUE+8gAkmwGZJyAA3qru180bcjjybGxIinc09TgyxHSFRdO6/w1MToaioMLHizmRAxnaDYvc0uOzdYHeNyqzfgPydJVIHnMPfGplYhstNrto6TxJ7/AKKYbwN7OkdoSh1s0fs+EsB5nBzc/SFixo6XDaPSbwMsnticMr52sM8zn0lJ1r42NLm6Sx/m8RE8nsKZOGW/aJ0pDM1xp5GyAOsSwg2Nr2PMUrpSCGaMxVMPGxvIBY5nGNvfIm18NvKytzrPeBCpe+mqC83+MWBwtYSOKbtDVpgVJiYnEqJPwUaMLsTY52jyGzHD2uJcO1WLQ+gqWijIp4WwNNsbhcyPtsxyuOI9vUpsn2d6hda3ODGkbOV1YsrerEiJCnq43ZRuBtuG4dSp2t7vjG35LfuhdaEmealliTmb+bY3v/PMkNcCDUEXtyW2P1QiSqWsx8CBts9tzuubqLZsUjrIQIWgG/LaSRsvn/PpUazYqEqoqDxbes96mqpQTnZnrPelm7Q5jLTR8F9b2MUGxTOmD4P63saoZi1OrUnvjodwp7CUyhTyNGemfQuTmZ3g3eaUyiKcyHkHqUdsR+y3SVw4PBcVI56OXvapuLRMliDM0yC4ba2EZWsQW36NqiODaPE+Zl7YqZwvzYntF1c4NX5+N4w1JJvfDhszqsD3rO1K23jLz7LtYWuEzw8guDgHEbC4U1MHW6L3VcrHK564aPAqHEzxAufIXYuN2tbEw2sw+RvO/eqrU6Pvsng9Mhb99oWUCvzladwGyWbV+dD916zeupC3a+J3mSxSepriQtE4GIy1tUTaxMNrOa7Zxt7hpJG7air3p5nHvZjdZsZxAZEFxBAJvzbkxqNV2ykYqhzcw3C0NtitzG/KI3epQetOnp4axsMUkMYdGHY5muLWm78yW525IGQ2lN4tZaoW+PaOJvfxKnb2IJCtFCXYJK2S8biD4B/jNIDrkNsc2nZ5R6LS8mhY5GMkZUENLRI0hjQcJsQ7l3IVHllxEudNo0lxLnHDWZlxuTkRvKdt1jqWtaxtVo/C1oY0YKnJrcgNvQgtU9CA9rg4Axva8BotaxuBtORFx1FXV1ac7HOxt1rE67W6rYL8bRy3NrRNmuMtpxEADLdzrQ2aRvI0X2uA7TZBFT6y1LnubTtifgkex2N7Y3eDeWOIYXXtiabHoQk09XAj4tHn/wA3F3HpVMq4JJamoa2XABU1IBJDWsHHPeXZ+N1e/KRqKp9N4AyvlmbnhEZIw2u0YwLcxsefbzsZ2MxG6wf07X76WLrMjh7F0NOVtx4CAC5vecndfKwVQoNNyOhlmc1wLSeRYgEkC2EbxtPvS9RLUMcI/CDA4EG5whzhtO4ZG1/4oZjwaPoXTJdC55IBxFhAzaC1rXZOucQIeDfLaqlrLXvdUkhxHIYMifzj7SnWhanFSYr3xTy589o4Rf1KE0w/wx81vtWF9n0fZcZ1/lJN+kJfnHfaPvTWStedpB6wD3rl5SDyteXoLaVJ3rH0CSo52s+wz8Kj9IOaWE4GAgixDGNIuc82gJy8plWnwbutvermWudLTiMxWPpDRuCV/F0E0jpXRtNSWkhocBhhjdc3Y7DkTmclfn6RjZ41Y0Wz5RhAsBfcwblTOCKW2jntLWua+eXEHC9wWRtI6rBT850bR4ZnQwQFviFjQ03tbktG+xK3VjueZ7VP/W3U60zrKyldE2eYNMz8Ed2PdcggXOAiwzGZyzTfWjWyOjYz4Y9uGUuDbQvkBwgONwJNlnBQVfrpoudzeOxHA7E1zo3HC7yhkSD0jMKR0xoCj0tFEeOD2Rl+AxPDbFwaC0jCbGzRltGauHPlGUnCXo2P8nK1pNgfi1Q0nmF+UldZJXPncXWbYNBw7uSN7j7Co5/A5E03jlmyINjIwi4/RhPdNMc2Z/GDlcnK4NyWjDsQVrTgHFXBvd7RtJtne4tYXy5t6Yx7E90+/wAGLixxty3b80yj2JASqt6r0hzPWe9WCqVdlPKPWe9LNuhzGWlfyf1vY1RLFKaUPg/rfhUWxanVfeDuFPI0zhTyNGzTOY0u/wAU9SbxpeQ8g9SO6vJbpP8AS88F4+Mv/sx/vWrQhZ9rCTEQL4SWtBsL5B2Sz/gsHh3n/p3D9owq38U5ry+8oGEb3YNg6MvbdZTaI3l55k+tJtVT/wBomvv2MhG3fsVbqSrBrY/41OeeeU9rYSq1UOWQZzFaNwKbaz/t/wDGWbyrR+BU51f/AG/+MikOEw/HW/Qt+/IoqKKPCL7bDuUhwoPtWt+hb/eSKDjqjYdQ3Ih/xcfMEm+KPmTc1h5h2BcGrPR2IG1YQHkDZktt0dFBha9+Iu68gQ7aOzfdYTVS3f2LT2VpGV95RVph0ZQseZWtLXuLi51zmXkl19xuSV1HouhEhlGLGb3dicScW3bkqw+VsrcElnNOZBttGw5iyaSaNgvsy5rRfgViZjZJjO64/wBDaPwYOLbhuTYANFztOQG3Yn4fAWvZicWvFnjJ2IcxuFnzdGQ83qh/y1JUTmwgtjsATc8lgz+q0D1KKtDNHUrYSxjXNa3G4AG1iQL+jkjsWf6UPhT5rfarOa9xY4YvkkduXtVV0mfCnzW95WF9n0fZf8j5SavKQeUo9yQeVreiknIUzrDyHdbe9OXlNK3xD9XvRhflloeoOkG0+iZJnbGyynrNmWCpNdXy1MpkkJc5xAAGdsR5LGj1KTheRoIgb6o36uT7ky1RcwVUDpCA1sjiSTYAiMlpJ3Z5+hdFdnk+0+9t1WHQ+o5cfjBsbhuCNwLsRAdZz/FyBF7ZZ7cikdN6Gl0ZMJaSW7hGJJGWJaYw+3K8poPpHjAgjK96BrqUMMhlBJ4x4z5RL5XG1vlEA2y3JDSuj31TxJGAzG3AA+4a+NnhHN2Z3sejO3OVWnCd1Q1jbVwNeNtr2O3I2c05Zua7IkbQWOyxWFc1uf8AG5LbbMt0XYM+y6rHBPUuZO+MG7RI0eh8crXdpjhP1FNa4TfGpPNj/uwoqs6ZPg2535bc9+9Ix7EWkn3Y3z2/vI49iBKqKrcx5R6yrHVKtTnlHrKWbNHc00l+T+t+FRjFI6RPg/rfhUcxanVbeDuFPI0zhTyNG3TOI0tP4jupJRpSoPg3eaUd1eS3SWg8FDfHd+a4fcKs1LWnBgewSHE83fK0XaXuLG4c7YQW/ZVU4JZ83s34XO9bAnFVrBgqHMbTPcGk8prJDs27Y8PY4rKaVtvDz6h61P8AjMw2Wnkyve3IiFr79m1V6YqU05Pjnmfa2KVzrbxiaw2URKVkhu9aNwLnOr/Qf4yzh60XgY8ar6oP8VFNeFBpNa2wJ8C3YCf6yRVK7/Jd2FektGTYWuH5xPqCefC+kqDzDd/ku7HIrv8AJd2Fen/hfSh8M6UHl0sdfxXdhWhu2HrWvOrMjmsvZQuscictgzJ6AN5QNqcldOunbKYjc70sk/CujB0H7LvcqGbbpYgpcQfzZ3uSwh6/sv8Acg5iBwH0D2+xQmlfyp81veVaoqe7TYHKxzDhtvzjo9aq+nhaa35je9yxvs+j7L9/8pR8hSDyu3uSDytT0UuHFNaw8g+jvS7imtWeQesd6Q1anLK56r0om0U+E/Kkkt0EYSO5VymonNLmuyIOw7iD/ParNqI74mPpH+xSlfotspxA4X8+49a6K7PKdo97bq40I9hhY27uMaXYgGxhjGgclwdkZXOAGW3I3FyL86ya3CGItxYp3Ns0Yg/Bf5RseSB5JDSdnPaH0hq7O8WAYekk9wBXOhtQzjDpyCB8gXDPSbhzh+aA2/lBVqSnBVowtHGkEYiH/o42yRxk38t8khH0F+ZK66S/G5M90f8AdtVxoWNjbhb0XOWdgAMhkAAAABkAAAqFrpJ8bkuLi0dx+jaosIWuk5LBe/KHpte56rud2JzHsTCodkzK2YsOZueHtOIp9HsQJVO9Vic8t3WVsFTqNOfEkjPWXD91VzSnB9OXG7Wh3O147irLLTtwyzfSB8H9b8Kj2K9VfB7WnkAR2yONzw0Z5WsLm+SODguqT408LeoSO9gWvDotq1nCnwp5GrtTcFz/AJVUPqxH2vUnBwXx76mX0CMewqcLOuvWGfRpSr/JP80rTGcGVPb8pKfr2+6AuY9QY4HB7HPNzaznYhz71eFv/W1isxEbwrHBVVObUyFtsoN+YzkarnV1kLSS58bdt7yEbTcjN2zo2LqPUymlN5YI3OF88Audm3cU9g1NpmeJBGOpjR3BZYfMYlpmQOqJ3NIIMziCLEEENIII3WKi5XDetkqdSKV0rnOjeeU42xkNuTc5NANui6kaHV+KL8lEyPpY0B3pd4x9JQYvR6uVc2cdO+x+U4cW37T7A+hadwRasTwce6cNbxgiwtBxOGHHfFbIeMNhKt8Gj88/Wp7RNOG39CCH0nTzteBFGHAi55Ybnc7iE1EVZ8wP1rfcrdUMzHV7SibGpgVIxVnzA/Wt/CkpHVY/4f8Aat9yufFpJ9PdXAprZ6kkA05F9/GNy6VIzaJPFuwt5Vjbdnuz3Kd+BhPXwDCepIgZ8KSr+Z/at9yUbQ1vzI/Wt9yugi6AlWx9XYgpB0fXfMj9a33Lg0VaP6n9q33K+4ers/iuTH1IKtouglc13HMwnIAYg7IXzuOtVHXvV+ZpE8TS4ABrmNBc85mxDQNmZutahi2+hNa6IYvQmGVL2pOaziXneokkZlIxzfOa9veE2Fc07x2heh30wO0AqPqtX6aTx4IndbGn2LHhh1V7f2iPi/phJnCQqXXb2LaZtQdHu/4dg827fulcUfB/QxvxhjjzNe4uaOoH3pwwzn2lrTGJx9FP1MaW0gBBHLec8sjaxVga5WCu1bZIQWySR2AFmYMOWzJzT6kxfqvMPEnafPjz7WOHcs4cFpm0zMmTXpeOVG7QdUNgif1Pcz1Fp70k+jqG+NTv+qWOH3gfUiHTJje98rbLZ367+xUvWl5NU8tOdmbdh8G1WV1QW5OZI3zo327QLKn6wFz6lwia59wy1gbZMaNtucFBGzvzaL3OK7juJ3AdAHeVJR7EhR6Fnxhzo3kjYAxxHdmpcaMn/wDzy/q3e5WBsoUfWtu4oIIsGT4Lo2UqJBRZOY6ZOGU6JBEOGQrmrhuB1+xBBFHSQgXXb4s0SCMUUYeU7rXQhQQQKxxJ/SNQQQKTXvlzImk86CCBQEo7FBBALFLyDJBBAiGI8CCCA7I8KCCA2prVjlej3oIIsG5C5IQQUZCsisggiO42JQRIIKoHFIjEggiEyxJfBGXxYRfnQQQOqdtnJySiQVH/2Q=="
+                alt="">
+            <p>Home & <i class="fa-solid fa-angle-down"></i> <br> Furniture </p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" alt="">
+            <p>Flight <br> Bookings</p>
+        </div>
+    </header>
+    <div class="d">
+        <img class="img-1" src="https://rukminim2.flixcart.com/fk-p-flap/1010/170/image/94f6e133cb568401.jpg?q=80"
+            alt="">
+
+    </div>
+
+    <section class="topDeals">
+        <img class="republic"
+            src="./Online Shopping India Mobile, Cameras, Lifestyle & more Online @ Flipkart.com_files//e3ba27199ea77ded.jpg"
+            alt="">
+
+        <div>
+            <h1>Top Deals</h1>
+            <article class="top">
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/110/110/xif0q/projector/x/s/t/i9-pro-max-fhd-1080p-e03i31-10-e03i31-led-projector-egate-original-imahgxvbyhh7uejw.jpeg?q=80"
+                        alt="">
+                        <div>
+                                 <p>Projector</p>
+                    <p> From &#8377;6990 </p>
+                        </div>
+               
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/110/110/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=80"
+                        alt="">
+                    <div>
+                        <p>Best Selling M...</p>
+                        <p> From &#8377; 499*</p>
+                    </div>
+
+
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/110/110/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=80"
+                        alt="">
+                        <div>
+                              <p>Monitors</p>
+                    <p> From &#8377;6599</p>
+                        </div>
+                  
+
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/110/110/xif0q/monitor/w/i/f/-original-imahagy2cefszqgy.jpeg?q=80"
+                        alt="">
+                        <div>
+                             <p>Monitor</p>
+                    <p> From &#8377;8279</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/110/110/k3rmm4w0/point-shoot-camera/f/n/v/kids-point-and-shoot-digital-camera-point-and-shoot-kids-point-original-imafknpazf7dhses.jpeg?q=80"
+                        alt="">
+                        <div>
+                             <p>Top mirrorless</p>
+                    <p>Shop Now!</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
+                        alt="" height="80px">
+                        <div>
+                             <p>Fastrack smartwatch</p>
+                    <p> From &#8377;1399</p>
+                        </div>
+            </article>
+        </div>
+    </section>
+<!-- 70% off -->
+
+    <section class="topDeals" >
+        <img class="republic"
+            src="https://www.joebrowns.co.uk/media/jb_images/AW25-SB2/Mens/DESKTOP-70-OFF.jpg"
+            alt="" height="140px">
+        
+        <div>
+            <h1>Fashion Top Deals</h1>
+            <article class="top">
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/7/r/b/7-sandoz-black-7-hotstyle-black-original-imahfw7xqtwssqqb.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Men's Sports Shoes</p>
+                            <p class="min"> Min.70% Off </p>
+                        </div>
+               
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/slipper-flip-flop/4/i/c/8-eagle-f-b-black-06-cloker-black-original-imahgphm8hznjvdg.jpeg?q=60"
+                        alt="" height="150px">
+                    <div>
+                        <p>Men's Slippers & Flip</p>
+                        <p class="min"> Min.70% Off</p>
+                    </div>
+
+
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/5/o/s/-original-imahd2pygheesavd.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Men's Casual Shoes</p>
+                            <p class="min"> Min.70% Off</p>
+                        </div>
+                  
+
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/watch/u/y/h/1-8517-rls-boys-girls-original-imahhy77hnzugjsz.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Wrist Watches</p>
+                            <p class="min"> Min.90% Off</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/track-suit/w/c/w/xxl-colorblock-m7-by-metronaut-original-imagpxdgdhnashdh.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Men's TrackSuit</p>
+                            <p class="min">Min.50% Off</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/jacket/9/3/p/xl-1-no-mt2-jkt-arrow-print-ice-blue-white-motrex-original-imahgnjm9qmkzfwz.jpeg?q=60"
+                        alt="" height="150px" >
+                        <div>
+                            <p>Men's jacket</p>
+                            <p class="min"> Min.50% Off</p>
+                        </div>
+            </article>
+        </div>
+
+        <!-- Home accesories -->
+    </section>
+
+        <section class="topDeals" >
+        <img class="republic"
+            src="https://www.casadecor.co.in/cdn/shop/collections/wall_decor_4694c3f0-1e4f-4731-bd07-9828ce046c16.jpg?v=1758283184"
+            alt="" height="130px">
+        
+        <div>
+            <h1>Make your Home Stylish</h1>
+            <article class="top">
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/wall-clock/j/5/x/anchor-shape-gold-color-pendulum-wall-clock-28-fsb-wc-3-analog-original-imagnbz4vqktkm58.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Wall Clocks</p>
+                            <p class="min"> Min.50% Off </p>
+                        </div>
+               
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shopsy-bottle/7/m/q/500-vacuum-flask-bottle-set-1-histowx-original-imahj4cgb3brdymd.jpeg?q=60"
+                        alt="" height="150px">
+                    <div>
+                        <p>Water Bottles & Flasks</p>
+                        <p class="min"> Min.50% Off</p>
+                    </div>
+
+
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/240/240/l4d2ljk0/sofa-sectional/x/j/l/left-facing-180-34-aqua-blue-241-3-polyester-80-steffan-l-sheped-original-imagf9zer8ptqhrh.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Sofa & Sectionals</p>
+                            <p class="min"> Min.50% Off</p>
+                        </div>
+                  
+
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/blanket/s/e/r/-original-imahfjhzddtyxbsg.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>Blankets</p>
+                            <p class="min"> Special Offer</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim1.flixcart.com/image/240/240/kb9ou4w0/tv-entertainment-unit/f/x/h/particle-board-za0022wh-barewether-white-with-walnut-original-imafsnnntmvsysap.jpeg?q=60"
+                        alt="" height="150px">
+                        <div>
+                            <p>TV Units</p>
+                            <p class="min">Min.50% Off</p>
+                        </div>
+                   
+                </main>
+                
+            </article>
+        </div>
+
+        <!-- snacks -->
+    </section>
+
+        <section class="topDeals" >
+        <img class="republic"
+            src="https://assets.aboutamazon.com/dims4/default/e2f1573/2147483647/strip/true/crop/1279x720+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F10%2F3c%2F5b7a5b74408b93c9af780b80f1f6%2Fbanner-snacks.jpg"
+            alt="" height="160px">
+        
+        <div>
+            <h1>Snacks & Savories,ice-cream</h1>
+            <article class="top">
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cookie-biscuit/z/h/j/-original-imah5jgrhw5env9j.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>cookie-biscuit</p>
+                            <p class="min"> From &#8377;150   </p>
+                        </div>
+               
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/snack-savourie/j/i/g/75-himalayan-salt-roasted-makhana-healthy-snack-protein-rich-original-imahdgffxzyzuzax.jpeg?q=70"
+                        alt="" height="130px">
+                    <div>
+                        <p>Salted Makhana</p>
+                        <p class="min"> From &#8377;200</p>
+                    </div>
+
+
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l2tcfbk0/cookie-biscuit/d/r/c/600-almond-cookies-200g-coconut-cookies-200g-and-pista-coconut-original-image2ng7ahhup75.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>Pista Cookie's</p>
+                            <p class="min"> From &#8377;150</p>
+                        </div>
+                  
+
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/snack-savourie/3/m/o/400-bhujia-no-1-1-pouch-bikaji-original-imahdwpdc2jhbtpd.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>Aaloo Bhujiya</p>
+                            <p class="min"> From &#8377;100</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/snack-savourie/p/9/t/250-seeds-berries-snack-mix-1-plastic-bottle-src-original-imahgabszvetqxmm.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>Seeds & Berries</p>
+                            <p class="min">From &#8377;250</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/snack-savourie/q/6/s/400-cornflakes-mixture-1-pouch-lalji-original-imahgff4bgv2xxug.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>CornFlake Mixture</p>
+                            <p class="min">From &#8377;150</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/snack-savourie/t/n/z/10-last-chip-challenge-pack-of-2-2-box-jolochip-original-imagzg4sbfjbabnt.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>Zolo Chips</p>
+                            <p class="min">From &#8377;150</p>
+                        </div>
+                   
+                </main>
+                <main>
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ice-cream/3/4/z/-original-imahc3aujgtkes9x.jpeg?q=70"
+                        alt="" height="130px">
+                        <div>
+                            <p>Quality Wall Choco Chips</p>
+                            <p class="min">From &#8377;150</p>
+                        </div>
+                   
+                </main>
+                
+            </article>
+        </div>
+    </section>
+    <div class="bot">
+    <h1>Top Stories:Brand Directory</h1>
+    <p>MOST SEARCHED FOR ON FLIPKART: OPPO Reno15 Pro | OPPO Reno15 Pro Mini | Upcoming Republic Day Sale | Pongal Sale | MOTOROLA Edge 70 | Ray-Ban Meta Smart Glasses | MOTOROLA 967 power 5G! Wedding Sare Lehenga Google Pixel 10 Pro Fold iPhone 17 | iPhone Air | vivo v60e moto g06 power 5g | Apple iPhone 17 Pro Max | Google Pixel 10 | Google Pixel 10 Pro | Google Pixel 10 Pro XL | Samsung Galaxy 2 Flip7 5G | REDMI Note 14 SE 5G | Mens Watch | Womens Watch | Men's Jackets Nothing Phone 3 | Soundbars | Rings Earrings | Sony Soundbars | Jewellery Airpods | JBL Soundbars | Urbn Power Banks Boult Wireless Earphones | Bose Soundbars | Oneplus Wireless Earphones | vivo X Fold 5. MOTOROLA Edge 00 5G SAMSUNG Galaxy S25 Edge | MOTOROLA Razr 60 | CMF Phone 2 Pro Google Pixel 9A | SAMSUNG F16 | Nothing Phone 3a | iPhone 16e SAMSUNG Galaxy S25 Ultra | SAMSUNG Galaxy S25 Plus | SAMSUNG Galaxy S25 | IPhone 16 | iPhone 16 Plus iPhone 16 Pro | iPhone 16 Pro Max | vivo V50 | OPPO Reno13 Pro | POCO X7 | realme 14 Pro Plus | REDMI Note 14 Pro+ 5G OPPO Find X8 | CMF by Nothing Phone 1 Infinix Note 40 Pro 50 iPhone 15 | Infinix Note 40 5G | Vivo x 100 | SAMSUNG
+
+Flip5 SAMSUNG Fold5 | Flipkart Axis Bank Super Elite Credit card | 5G Mobile Phones Grievance Redressal Track Orders | Manage Orders
+
+MOBILES Infinix SMART 10 OPPO Reno 14 Pro | Motorola 964 5G | OPPO Reno 12 | Motorola G45 5G | Motorola Edge 50 Fusion | Realme 12+ 50 | Infinix Smart 8 | vivo V30 | Samsung Galaxy S24 5G | Infinix HOT 301 Realme 10 Pro 5G | Motorole 5g Phone | Realme 5g Smartphone Apple 5g Phone | Iqoo 5g Phones | Oneplus 5g Phones | Vivo 5g Phones | Oppo 5g Smart Phones | 4G Mobile | Nokia Mobile Samsung Mobile | Oppo Mobile | Vivo Mobile | Apple Mobile
+
+CAMERA GoPro Action Camera | Nikon Camera | Canon Camera Sony Camera Canon DSLR Nikon DSLR
+
+LAPTOPS Asus ROG Ally MacBook Pro M2 | Premium Laptop ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen ASUS Zenbook 14 OLED (2022) Reaime Book Prime Core I5 11th Gen Microsoft Surface Go Pentium 128GB | Apple Laptops | Acer Laptops | Lenovo Laptops | Dell Laptops | Asus Laptops | HP Laptops | Msi Laptops | Samsung Laptops | 2 in 1 Laptops | Infinix INBook YT Plus SAMSUNG Galaxy Book3| 12th Gen Intel Core Laptops
+
+TVS TV LG TV | Sony TV | Samsung TV | TCL TV | MI TV | Panasonic TV | OnePlus TVs | Iffalcon Tv 32 Inch TV | 40 Inch TV | 43 Inch TV | 50 Inch TV | 55 Inch TV | 65 Inch TV | 75 Inch TV | LED TV | OLED TV QLED TV
+
+LARGE APPLIANCES: Electric Cookers Air Fryer Sandwich Maker Electric Jug(Heater)/Travel Kettles | Induction Cooktops Inverters/stabilizer | Wet Grinders | French Press Milk/Coffee Frother Chimneys | Microwave Ovens | Vacuum Cleaners/Fan
+
+CLOTHING Sarees Men's Jeans | Tops Mens Footwear | Shacket | Designer blouses | Women's Haldi Dress Women's Mehindi Dress | Lavender Saree Blouse designs | Shirts | Cotton saree blouse designs | Tshirts | Men's Blazer | Dresses/One pieces | Readymade saree | Groom wedding sherwani | Designer Salwar Suits | Bra | Track Pant | Mens Kurta | Party Dresses | Palazzo Suits | Anarkali | Gowns | Cut out dress | Salwar Suits | Kurtis | Kurta set for women | Designer
+
+Sarees | Leggings | Shorts | Georgette Sarees | Ethnic Wear | Blouse back design | Jodhpur pants
+
+FOOTWEAR: Adidas Shoes | Reebok Shoes | Nike Shoes | Puma Shoes | Boots | Bata Shoes | Crocs | Woodland Shoes | Skechers Shoes Sneakers | Womens Boots | Sports Shoes | Loafers | Sandals | Lotto Sports Shoes Casual Shoes Womens Skechers
+
+Shoes Asics Sports Shoes | Formal Shoes | School Shoes
+
+GROCERIES PhonePe Grocery Voucher Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta | Fortune Oil | Aashirvaad Atta | Tea
+
+BEST SELLING ON FLIPKART Best Gas Geyser | Kitchen Geyser | Nutri Blenders | Portable Air Cooler | Best Air Cooler Bags | Hitachi Refrigerator 3 Door | Books | Candles | Helmets | Wall Clocks | Baby Food Chocolates Calculators | Lipsticks | Mask | Bangles | Vertiv UPS | Fastrack Watches | Wallets | Gold Coins | Realme Pad Mini | conekt SW2 Smartwatch | Mivi DuoPods a350 | Speaker Cleaner
+
+FURNITURE Fürniture | Beds | Dining sets | Wardrobes | TV Units | Tables | Chairs | Shelves | Bean Bags | Office Chains | Computer Table | Office Tables | Red Sofa | Wakefit Beds | White Sofa | Wakefit Mattress | Green Sofa | Black Sofa | thown Sofa
+
+BGMH: Car Accessories | Bike Accessories | Car Dashcams | Vehicle Battery | Engine Oil | Car Air Fresheners | Shampoo | Whey Protein | Homeopathy | Cricket | Cycles | Footbalts | Treadmills | Fitness Accessories Online Guitar / Books Store Musicar Instrument Store Energy Drinks | Mak Drink Mixes | Protein Supplements</p>
+<h1>Flipkart:India's Ultimate One-Stop Shopping Destination</h1>
+<p>Welcome to Flipkart, India's trusted and beloved e-commerce platform, revolutionising online shopping since 2007. With over 200 million users, 150 million+ products across 80+ categories, and a relentless focus on customer satisfaction, Filipkart iser't just an online store; it's your digital shopping companion. Be it the Flipkart app or the comprehensive Flipkart website, discover an unmatched universe of products, incredible Flipkart offers, blockbuster Flipkart sale events, and seamless service. From the latest gadgets to daily groceries, fashion must-haves to furniture solutions, Flipkart is your definitive destination for e-commerce in India, offering convenience, value, and reliability at every click. Experience the joy of buying online with India's homegrown isaderd
+
+<h1>What Can You Buy from Flipkart?</h1>
+
+Flipkart's strength lies in its incredible diversity. With offerings for every need, aspiration, and budget, you can dive into the meticulously curated categories for your needs:
+
+Mobile and Electronics: Flipkart has a wide range of mobiles with advanced features and the latest technology. As a leading e-commerce platform, we offer all the latest models from top brands. Explore the newest flagships from Samsung, Apple, OnePlus, Xiaomi, Vivo, Oppo, and more. Find budget-friendly smartphones, 50 powerhouses, gaming phones, and refurbished options. Additionally, Flipkart Complete Mobile Protection offers comprehensive coverage for post-purchase issues, including door-to-door services. Complement your device with extensive accessories: durable back covers, screen protectors, fast chargers, power banks, wireless earbuds, smartwatches, fitness bands, and VR headsets.
+
+Check out different types of laptops to power your work, creativity, and entertainment. Shop a vast range of laptops like ultraportables, gaming laptops, business notebooks, Chromebooks, and all-in-one PCs. Our Back To College Store segregates laptops purpose-wise with recommendations from top brands and industry experts. You can also find a wide selection of tablets, bluetooth speakers, and headphones from top brands, in addition, explore digital cameras, smart home devices, printers, security cameras, powerful desktops and monitors to serve every purpose.
+
+Home and Kitchen Appliances: Upgrade your home and kitchen appliances to make your days more comfortable and convenient. Discover stunning Smart TVs, home theatre systems, soundbars, and streaming devices, Invest in essential large appliances: energy-efficient refrigerators, washing machines, air conditioners, microwaves, water purifiers, air coolers, and geysers from trusted brands like LG, Samsung, Whirlpool, Godrej, and Vortas. Benefit from installation services and extended warranties Flipkartinas a massive collection of all the latest and trending range of these products. You can shop for your favourites among them at affordable prices. Additionally, our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee anything goes wrong.
+
+Make daily chores effortless and enjoyable with modern kitchen appliances. Equip your kitchen with microwaves, mixer-grinders, air fryers, OTGs, electric kettles, induction cooktops, rice cookers, coffee makers, blenders, and sandwich makers. Keep улиг home spotless with robotic vacuum cleaners, handheld vacuums, steam mops, irons, and garment care. Enhance comfort with heaters, fans, and humidifiers. With the increase in pollution, make your home clean and hygienic with ar puifiers
+
+Fashion and Beauty: Flipkart, India ka Fashion Capital, is your one stop destination for anything and everything you need to look good. Express yder unique style. Explore an enormous colection of clothing for men, women, ant kids. You can choose from ett wear, western wear, activewear, nightwear, and innerwear. You can find footwear for every occasion and accessorise your outfits with Handbags, watches, sunglasses, belts, and jewellery.
+
+Beauty and grooming products for everyone are available on Flipkart. Choose from a comprehensive range of skincare, makeup, halicare, fragrances, men's grooming, salon-style tools, and personal care essentials. You can choose offerings from top indian and International brand.
+
+Home and Furniture: Upgrade the decor and functionality of your home with various items for home decor, options for home lighting, and equipment for home improvement, Furnish all the rooms in your home with aequisite offlerings avalable fong o bedrooms, dining rooms, study, and outdoor spaces, Explore modern home decor options like curtains, cushions, rugs, lamps, clocks, wall art, mirrors, photo frames, and decorative tena
+
+Add comfort and style to your rooms with several fumiture of different designs and materials. You can find space-saving solutions and modular furniture. Check out sofa sets, bedsets, mattresses, cupboards for your bedroom weroman Dur Durability Certified Furniture Store has not only curated a range of furniture keeping in eind the modern Indian consumer but also fumiture that comes with a lab cenfication, ensuring they last you for up to 10 years. Monyve myougn 35 stability and load tests, so that you receive only the best-quality fumiture. Ele ForniSure, always
+
+Dolly Essentials: Order bessehold supplies like detergents, dishwash, cleaners tissues, and toilet paper: Stock up on health and hygiene products (sanitizers, masks, vitamins, festialdi Find pet food and supplies. Discover onun and</p>
+</div>
+
+
+</body>
+
+</html>
